@@ -78,7 +78,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**ഡാ മോനെ, \nഅത് ലോക്കാ ഇങ്ങൂ പോര് ഇങ് പോര് 🥱\nPlease Join My Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -235,7 +235,10 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('❤️‍🔥 ᴊᴏɪɴ ᴛᴏ ᴄʜᴀɴɴᴇʟ ❤️‍🔥', url='t.me/cinemala_com1') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🔎 ᴏT͏T͏ M͏ᴏV͏I͏E͏S 🔍', url='https://t.me/ML_LINKS_01')
+        ], [
+        InlineKeyboardButton('🔎 M͏ᴏV͏I͏E͏S BᴏT 🔍', url='https://t.me/AutofilterV0_bot')
+        ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
