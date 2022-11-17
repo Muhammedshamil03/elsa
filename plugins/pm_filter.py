@@ -542,8 +542,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
-        await query.message.reply_sticker(        
-            sticker="CAACAgIAAxkBAAECr6BiuwoF4Y1G5Vfwb48tt0rkFmFFugACdBkAAv3EyUkrrD3DFv2fpR4E",            
+        await query.message.reply_photo(        
+            photo="https://telegra.ph/file/9b03cdf2da313f63c3ad5.jpg",            
             reply_markup=reply_markup,
         )
         await query.answer('𝙼𝙾𝚅𝙸𝙴 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙱𝙾𝚃')
