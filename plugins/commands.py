@@ -48,8 +48,8 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgUAAxkBAAEDFNVjd2dFnmkw2ega-TOAxvKL5zSUQAACYQMAAgTSeVVcswiPXx0KXB4E") 
         await asyncio.sleep(1)
         await m.delete()        
-        await message.reply_sticker(
-            sticker="CAACAgIAAxkBAAECr6BiuwoF4Y1G5Vfwb48tt0rkFmFFugACdBkAAv3EyUkrrD3DFv2fpR4E",            
+        await message.reply_photo(
+            photo="CAACAgIAAxkBAAECr6BiuwoF4Y1G5Vfwb48tt0rkFmFFugACdBkAAv3EyUkrrD3DFv2fpR4E",            
             reply_markup=reply_markup,
         )
         return
