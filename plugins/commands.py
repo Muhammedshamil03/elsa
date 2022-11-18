@@ -91,8 +91,8 @@ async def start(client, message):
             caption=script.SUR_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        return
+        
+         eturn
     data = message.command[1]
     try:
         pre, file_id = data.split('_', 1)
