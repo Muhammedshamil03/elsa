@@ -45,7 +45,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get("PICS", "CAACAgUAAxkBAAEDFNxjd2iPdc5TTs0aqcCt0LUtR1aopQACPAUAAm2DsFTEKVYFc4R6LR4E") 
+PICS = environ.get('PICS', 'CAACAgUAAxkBAAEDFNxjd2iPdc5TTs0aqcCt0LUtR1aopQACPAUAAm2DsFTEKVYFc4R6LR4E') 
 NOR_IMG = environ.get("NOR_IMG", "CAACAgUAAxkBAAEDFFJjdzZPC8SdNRrI5Bf7ievvZwTosAACSgUAAp3vmVaNvfNFRXF4eB4E")
 
 # Admins, Channels & Users
