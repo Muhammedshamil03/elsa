@@ -149,8 +149,6 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f' 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚆𝙷𝙰𝚃 𝙸 𝙵𝙾𝚄𝙽𝙳 𝙵𝙾𝚁 𝚈𝙾𝚄𝚁 𝚀𝚄𝙴𝚁𝚈 ', 'qinfo')
-        ],[
             InlineKeyboardButton(f' 🔎 {search} 🔍 ', 'qinfo')
         ]
     )
