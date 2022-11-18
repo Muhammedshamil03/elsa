@@ -49,7 +49,7 @@ async def start(client, message):
         await asyncio.sleep(1)
         await m.delete()        
         await message.reply_sticker(
-            sticker="CAACAgUAAxkBAAEDFNxjd2iPdc5TTs0aqcCt0LUtR1aopQACPAUAAm2DsFTEKVYFc4R6LR4E",
+            sticker=(PICS),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
