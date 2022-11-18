@@ -90,7 +90,7 @@ async def start(client, message):
             sticker=random.choice(PICS),
             reply_markup=reply_markup,
             )
-         eturn
+        return
     data = message.command[1]
     try:
         pre, file_id = data.split('_', 1)
