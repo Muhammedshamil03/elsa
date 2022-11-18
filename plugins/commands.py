@@ -48,9 +48,9 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgUAAxkBAAEDFNVjd2dFnmkw2ega-TOAxvKL5zSUQAACYQMAAgTSeVVcswiPXx0KXB4E") 
         await asyncio.sleep(1)
         await m.delete()        
-        await message.reply_sticker("CAACAgUAAxkBAAEDFNxjd2iPdc5TTs0aqcCt0LUtR1aopQACPAUAAm2DsFTEKVYFc4R6LR4E")
-            
-            parse_mode=enums.ParseMode.HTML
+        await message.reply_sticker(
+            sticker="CAACAgIAAxkBAAECr6BiuwoF4Y1G5Vfwb48tt0rkFmFFugACdBkAAv3EyUkrrD3DFv2fpR4E",            
+            reply_markup=reply_markup,
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
