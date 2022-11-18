@@ -51,7 +51,6 @@ async def start(client, message):
         await message.reply_sticker(
             sticker=random.choice(PICS),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
@@ -90,7 +89,6 @@ async def start(client, message):
         await message.reply_sticker(
             sticker=random.choice(PICS),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
             )
          eturn
     data = message.command[1]
