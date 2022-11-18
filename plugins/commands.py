@@ -91,7 +91,7 @@ async def start(client, message):
             sticker=random.choice(PICS),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        
+            )
          eturn
     data = message.command[1]
     try:
