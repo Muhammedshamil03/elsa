@@ -46,7 +46,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEDFNVjd2dFnmkw2ega-TOAxvKL5zSUQAACYQMAAgTSeVVcswiPXx0KXB4E") 
-        await asyncio.sleep(1)
+        await asyncio.sleep(2)
         await m.delete()        
         await message.reply_sticker(
             sticker=random.choice(PICS),
@@ -76,7 +76,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**ഡാ മോനെ, \nഅത് ലോക്കാ ഇങ്ങൂ പോര് ഇങ് പോര് 🥱\nPlease Join My Updates Channel to use this Bot!**",
+            text="**Please Join My Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
